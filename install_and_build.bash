@@ -18,8 +18,8 @@ sudo apt-get update
 sudo apt install -y  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 # BUilding docker
-cp ../trading-day-change/ ./trading-day-change/
-cp ../trading-telegram-bot/ ./trading-telegram-bot/
+cp -r ../trading-day-change/ ./trading-day-change/
+cp -r ../trading-telegram-bot/ ./trading-telegram-bot/
 rm -rf ./trading-telegram-bot/.git
 rm -rf ./trading-day-change/.git
 

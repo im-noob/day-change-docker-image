@@ -1,4 +1,15 @@
 FROM python:latest
+
+# Install tzdata
+RUN apt-get update && apt-get install -y tzdata
+
+# Set timezone to IST
+ENV TZ=Asia/Kolkata
+
+# Configure tzdata (non-interactive)
+RUN ln -snf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && echo "Asia/Kolkata" > /etc/timezone
+
+
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
