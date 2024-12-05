@@ -25,3 +25,6 @@ rm -rf ./trading-day-change/.git
 
 docker build -t aaravonly4you/day-change-docker-image:latest . 
 docker push aaravonly4you/day-change-docker-image:latest
+
+rm -rf ./trading-telegram-bot/
+rm -rf ./trading-day-change/
