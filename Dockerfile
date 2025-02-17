@@ -49,4 +49,4 @@ CMD ["python", "day_change_check.py"]
 
 # RUN apt-get install libgbm1 libxkbcommon0 -y
 # USER airflow
-# RUN playwright install chromium
+RUN playwright install chromium
